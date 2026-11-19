@@ -1,0 +1,95 @@
+Oct 28, 2026 11:05:10 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:10 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:12 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:12 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:12 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:12 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:12 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+Oct 28, 2026 11:05:12 PM com.campusverse.util.DatabaseManager initSchema
+INFO: Database schema initialized and default data verified.
+╷
+├─ JUnit Jupiter ✔
+│  ├─ Phase4VibeMatchTest ✔
+│  │  ├─ testJaccardSimilarityAlgorithmWorkedExamples() ✔
+│  │  ├─ testDuplicateInterestsDoNotIncreaseScore() ✔
+│  │  ├─ testOwnProfileDoesNotAppearInRecommendations() ✔
+│  │  ├─ testRecommendationsRankingIsDescendingAndStable() ✔
+│  │  ├─ testRejectAttemptsToModifyAnotherStudentsInterests() ✔
+│  │  └─ testInterestChangesPersistAndDoNotDuplicateRecords() ✔
+│  ├─ Phase6FullRegressionTest ✔
+│  │  ├─ step1_CreateNicknameAndInterestsVerifyPersistence() ✔
+│  │  ├─ step2_TwoSessionsSendReceiveMessagesInSubjectRoom() ✔
+│  │  ├─ step3_DoubtDropPostAnswerAndAuthorOnlyResolution() ✔
+│  │  ├─ step4_VibeMatchCalculatesKnownPercentages() ✔
+│  │  ├─ step5_GhostRoomCreationChatAndPostExpiryRejection() ✔
+│  │  ├─ step6_SecuritySanitizationAndValidation() ✔
+│  │  ├─ step7_InvalidRoomIdAndParameterValidation() ✔
+│  │  ├─ step8_DataPersistenceSurvivesFullShutdownAndRestart() ✔
+│  │  └─ step9_SecurityFilterAndCsrfProtection() ✔
+│  ├─ Phase2StudyChatTest ✔
+│  │  ├─ testTwoWayMessagingBetweenDistinctStudentSessions() ✔
+│  │  ├─ testMessageHistoryPersistsAcrossDatabaseCheckpoint() ✔
+│  │  ├─ testMessageRoomSeparation() ✔
+│  │  ├─ testMessageValidationAndXSSPrevention() ✔
+│  │  ├─ testRejectSpoofedSenderAndRequireActiveSession() ✔
+│  │  └─ testMessageApiServletReturnsValidJson() ✔
+│  ├─ Phase5GhostRoomsTest ✔
+│  │  ├─ testSupportedDurationsAndUtcTimestampAccuracy() ✔
+│  │  ├─ testGhostRoomCreationAndActiveMessagingTwoSessions() ✔
+│  │  ├─ testExpiryBoundaryAndRejectionLogicWithClock() ✔
+│  │  ├─ testDirectHttpPostRejectionWhenRoomExpired() ✔
+│  │  └─ testHistoricalMessagesRetainedAfterExpiry() ✔
+│  ├─ Phase1DatabaseAndStudentTest ✔
+│  │  ├─ testVerifyExactlyFourDefaultSubjectRooms() ✔
+│  │  ├─ testVerifyDefaultInterestsSeeded() ✔
+│  │  ├─ testCreateStudentAndConfirmSavedInH2() ✔
+│  │  ├─ testSaveMultipleInterestsRefreshAndVerify() ✔
+│  │  ├─ testRejectBlankAndInvalidNicknames() ✔
+│  │  ├─ testFileBackedH2PersistenceSurvivesDatabaseRestart() ✔
+│  │  ├─ testSchemaInitializationIsIdempotent() ✔
+│  │  └─ testRejectProtectedActionsWithoutActiveNicknameSession() ✔
+│  ├─ SecurityRegressionTest ✔
+│  │  ├─ filterRejectsMissingAndWrongCsrfAndAllowsCorrectToken() ✔
+│  │  ├─ messageApiRejectsLoggedOutRequest() ✔
+│  │  ├─ scriptJsonCannotCloseHtmlScriptElement() ✔
+│  │  └─ twoHoursMeansTwoHoursAndDeadlineIsClosed() ✔
+│  ├─ Phase3DoubtDropTest ✔
+│  │  ├─ testStep1_StudentAPostsJavaDoubtAndItAppears() ✔
+│  │  ├─ testStep2_StudentBAnswersAndAnswerAppears() ✔
+│  │  ├─ testStep3_StudentBAttemptsToResolveAQuestionServerRejects() ✔
+│  │  ├─ testStep4_StudentAResolvesOwnDoubtStatusChangesAndPersists() ✔
+│  │  ├─ testStep5_RejectBlankAndInvalidContent() ✔
+│  │  ├─ testStep6_ConfirmSqlInjectionParameterizedAndScriptsNeverExecute() ✔
+│  │  ├─ testSubjectFilteringSeparation() ✔
+│  │  └─ testDoubtServletResolveEnforcesSessionAuthorization() ✔
+│  └─ HomeServletTest ✔
+│     ├─ testHomeServletInstantiation() ✔
+│     └─ testHomeServletAnnotation() ✔
+├─ JUnit Vintage ✔
+└─ JUnit Platform Suite ✔
+
+Test run finished after 3001 ms
+[        11 containers found      ]
+[         0 containers skipped    ]
+[        11 containers started    ]
+[         0 containers aborted    ]
+[        11 containers successful ]
+[         0 containers failed     ]
+[        48 tests found           ]
+[         0 tests skipped         ]
+[        48 tests started         ]
+[         0 tests aborted         ]
+[        48 tests successful      ]
+[         0 tests failed          ]
+
+
+Frontend syntax and mocked-DOM checks passed.
+Live Tomcat HTTP checks passed (see README).
+Maven build could not complete due to dependency connectivity.
